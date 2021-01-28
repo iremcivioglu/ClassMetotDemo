@@ -11,16 +11,21 @@ public class MusteriManager
 	}
 	public void Ekleme (Musteri musteri)
     {
-		Console.WriteLine("Tebrikler. Müşteri eklendi" + musteri.MusteriAdi)
+		Console.WriteLine("Tebrikler. Müşteri eklendi" + musteri.MusteriId + musteri.MusteriAdi + musteri.MusteriSoyadi)
     }
 	public void Silme(Musteri musteri)
 	{
-		Console.WriteLine("Tebrikler. Müşteri eklendi" + musteri.MusteriAdi)
+		Console.WriteLine("Tebrikler. Müşteri silindi" + musteri.MusteriId + musteri.MusteriAdi + musteri.MusteriSoyadi)
 
 	}
-	public void Listeleme(Musteri musteri)
+	public void Listeleme(Musteri musteriler [] )
 	{
-		Console.WriteLine("Tebrikler. Müşteri eklendi" + musteri.MusteriAdi)
+		//Musteri[] musteriler = new Musteri[] { };
+		foreach (musteri in musteriler)
+        {
+			Console.WriteLine(musteriler + "\n");
+        }
+		Console.WriteLine("Tebrikler. Müşteri listelendi" + musteri.MusteriId + musteri.MusteriAdi + musteri.MusteriSoyadi )
 
 	}
 
